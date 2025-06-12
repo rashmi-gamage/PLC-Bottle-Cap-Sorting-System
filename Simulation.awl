@@ -1,0 +1,38 @@
+INTERRUPT_BLOCK Stop_Interrupt:INT0
+TITLE=STOP INTERRUPT PROCESS
+BEGIN
+Network 1 // Network Title
+// RESETTING THE PROCESSES ONCE STOP IS PUSHED
+LD     SM0.0
+A      I0.1
+R      M0.0, 1
+R      M0.1, 1
+R      M0.2, 1
+R      M0.3, 1
+R      M0.4, 1
+R      M0.5, 1
+R      M0.6, 1
+R      M0.7, 1
+R      M1.1, 1
+R      M1.2, 1
+R      M1.3, 1
+R      M1.4, 1
+R      M1.5, 1
+R      M1.6, 1
+R      M1.7, 1
+R      M2.0, 1
+R      M2.1, 1
+R      Q0.0, 1
+R      Q0.1, 1
+R      Q0.2, 1
+R      Q0.3, 1
+R      T37, 1
+R      T38, 1
+R      T39, 1
+R      T40, 1
+CRET
+Network 2 
+// RESETTING PROCESSES
+Network 3 
+// RESETTING TIMERS AND REMAING PROCESSES
+END_INTERRUPT_BLOCK
